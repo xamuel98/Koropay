@@ -808,6 +808,11 @@ import { XIcon } from 'vue-feather-icons'
 
 export default {
     components: {XIcon},
+    watch: {
+        '$route' () {
+            document.body.style.overflow = 'auto'
+        }
+    },
     mounted() {
         let panelCloseBtn = document.querySelector('.panel__close');
         let panel = document.querySelector('.panel');
