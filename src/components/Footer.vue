@@ -77,7 +77,7 @@
                                 <a href="#">Contact Us</a>
                             </li>
                             <li>
-                                <a href="#">FAQs</a>
+                                <router-link :to="{name: 'FAQs'}">FAQs</router-link>
                             </li>
                         </ul>
                     </div>

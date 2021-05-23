@@ -571,14 +571,14 @@ img.koropay-stroke {
     font-size: 60px;
 }
 
-.clients__single-quote {
+.clients__single-quote, .faqs__single-question {
     position: relative;
     overflow: hidden;
     min-height: 0;
     transition: min-height .5s ease;
 }
 
-.clients__single-quote-content {
+.clients__single-quote-content, .faqs__single-question-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -590,7 +590,8 @@ img.koropay-stroke {
     border-radius: 30px;
 }
 
-.clients__single-quote:nth-of-type(-n+3) .clients__single-quote-content {
+.clients__single-quote:nth-of-type(-n+3) .clients__single-quote-content, 
+.faqs__single-question:nth-of-type(-n+3) .faqs__single-question-content {
     position: relative;
 }
 
@@ -671,6 +672,124 @@ img.koropay-stroke {
     border-radius: 30px;
 }
 
+.video-play-button-wrapper {
+    top: 0;
+    background-color: rgba(0,0,0,.05);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.video-play-button {
+    padding: 12px 1rem;
+    background: hsla(0,0%,100%,.7);
+    border: none !important;
+    border-radius: 100px;
+    -webkit-transition: padding .25s ease-in-out,background-color .25s ease-in-out;
+    transition: padding .25s ease-in-out,background-color .25s ease-in-out;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #403e3d;
+    height: 63px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-play-button:hover {
+    padding: 12px 1.4rem;
+    background-color: hsla(0,0%,100%,.9);
+}
+
+.video-play-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 2px solid #403e3d;
+    border-radius: 10rem
+}
+
+
+
+/*  */
+.step .step-wrapper {
+    width: 100%;
+    padding: 28px 32px 32px;
+    border-right: 1px solid #f6f6f7;
+    background-color: #fff;
+    -webkit-transition: .4s ease-out;
+    transition: .4s ease-out;
+    color: #0f0928;
+}
+
+.w-step .step-wrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    padding: 9px 30px;
+    text-align: left;
+    cursor: pointer;
+    color: #222;
+    background-color: #ddd;
+}
+
+.step-title {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    margin-bottom: 24px;
+    /* font-size: 24px; */
+    line-height: 36px;
+    font-weight: 800;
+}
+
+.step-number {
+    /* position: absolute;
+    left: auto;
+    top: 32px;
+    right: 32px;
+    bottom: auto; */
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #f6f6f7;
+    color: #878493;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+
+
+/* --------------------------
+    MORE FEATURES
+------------------------------------------------- */
+.benefits-sec h2 {
+    font-size: 20px;
+}
+
+.benefits-sec div.square {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+}
+
+
+
+
 
 @media only screen and (max-width: 768px) {
     .shape-container svg {
@@ -681,7 +800,8 @@ img.koropay-stroke {
     .hero__content .hero__header,
     .feature h1, .testimonials-app h1.section-heading,
     .download-app-content h1, .try-signup h1, .auth h1,
-    .sidebar h1, .hiw h1 {
+    .sidebar h1, .hiw h1, .steps.app-steps h1:first-child, 
+    .benefits-sec h1 {
         font-size: 31px;
         line-height: 37px;
     }
@@ -733,6 +853,17 @@ img.koropay-stroke {
         width: 100% !important;
         height: 60%;
     }
+
+    .video-play-button {
+        padding: 8px 1rem;
+        font-size: .99rem;
+        /* height: 63px; */
+    }
+
+    .video-play-icon {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -755,6 +886,10 @@ img.koropay-stroke {
 
     .try-signup p {
         font-size: 22px;
+    }
+
+    .step-text {
+        width: 80%;
     }
 
 }

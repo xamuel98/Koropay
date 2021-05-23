@@ -68,7 +68,7 @@ export default {
         }
     },
     mounted() {
-        document.body.style.overflow = 'auto'
+        // document.body.style.overflow = 'auto'
     }
 }
 </script>

@@ -1,12 +1,31 @@
 <template>
-  <div id="app">
+  <div id="app" class="scroller">
     <router-view/>
   </div>
 </template>
 
 <script>
+import Scrollbar from 'smooth-scrollbar';
+
 export default {
-  name: 'App'
+    name: 'App',
+    mounted() {
+        // let bodyScrollBar = Scrollbar.init(document.body, {
+        //     damping: 0.1,
+        //     delegateTo: document,
+        // });
+        // ScrollTrigger.scrollerProxy(".scroller", {
+        //     scrollTop(value) {
+        //         if (arguments.length) {
+        //             bodyScrollBar.scrollTop = value;
+        //         }
+        //         return bodyScrollBar.scrollTop;
+        //     },
+        // });
+
+        // // update ScrollTrigger when scrollbar updates
+        // bodyScrollBar.addListener(ScrollTrigger.update);
+    }
 }
 </script>
 
@@ -16,6 +35,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
+
+.scroller {
+  height: 100vh;
+}
 
 @font-face {
   font-family: 'Sen-Regular';

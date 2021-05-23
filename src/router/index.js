@@ -5,6 +5,7 @@ import Router from 'vue-router'
 import Home from '@/views/Home'
 import Customers from '@/views/Customers'
 import HowItWorks from '@/views/HowItWorks'
+import FAQs from '@/views/FAQs'
 
 // auths
 import Login from '@/auth/Login'
@@ -43,6 +44,11 @@ export default new Router({
       path: '/how-it-works',
       name: 'HowItWorks',
       component: HowItWorks
+    },
+    {
+      path: '/faqs',
+      name: 'FAQs',
+      component: FAQs
     }
   ],
   scrollBehavior(to, from, savedPosition) {

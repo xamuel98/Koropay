@@ -808,11 +808,11 @@ import { XIcon } from 'vue-feather-icons'
 
 export default {
     components: {XIcon},
-    watch: {
-        '$route' () {
-            document.body.style.overflow = 'auto'
-        }
-    },
+    // watch: {
+    //     '$route' () {
+    //         document.body.style.overflow = 'auto'
+    //     }
+    // },
     mounted() {
         let panelCloseBtn = document.querySelector('.panel__close');
         let panel = document.querySelector('.panel');
@@ -828,7 +828,7 @@ export default {
             if(panel.classList.contains('panel--visible')) {
                 panel.classList.remove('panel--visible')
                 navbar.classList.remove('hide')
-                document.body.style.overflow = 'auto'
+                // document.body.style.overflow = 'auto'
 
                 // Remove overlay
                 let backDrop = document.querySelector('.panel--overlay');
@@ -847,7 +847,7 @@ export default {
             if(!panel.classList.contains('panel--visible')) {
                 panel.classList.add('panel--visible')
                 navbar.classList.add('hide')
-                document.body.style.overflow = 'hidden'
+                // document.body.style.overflow = 'hidden'
 
                 // Add overlay
                 let elem = document.createElement('div');
@@ -861,7 +861,7 @@ export default {
                     overlay.addEventListener('click', () => {
                         if(panel.classList.contains('panel--visible')) {
                             panel.classList.remove('panel--visible')
-                            document.body.style.overflow = 'auto'
+                            // document.body.style.overflow = 'auto'
                     
                             // Remove overlay
                             let backDrop = document.querySelector('.panel--overlay');
