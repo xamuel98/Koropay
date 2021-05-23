@@ -1,7 +1,7 @@
 <template>
     <section class="auth py-4 py-lg-6">
         <div class="container">
-            <a class="navbar-brand kp-logo" href="/">Koropay</a>
+            <router-link class="navbar-brand kp-logo" to="/">Koropay</router-link>
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-6">
                     <h1 class="ff__sb mb-4">
@@ -50,8 +50,8 @@
                             <i :class="appendEyeIconType2" class="password-visibility" @click="switchVisibility2" style="cursor: pointer;"></i>
                         </div>
                         <div class="d-lg-flex justify-content-lg-between align-items-center mt-4">
-                            <span class="create-account--link mr-4 mr-lg-0">Already own an account?&nbsp;<a href="/login" class="auth--link">Log in</a></span>
-                            <a href="#" class="button text-white mt-4 mt-lg-0 mr-4 mr-lg-0">Sign up</a>
+                            <span class="create-account--link mr-4 mr-lg-0">Already own an account?&nbsp;<router-link to="/login" class="auth--link">Log in</router-link></span>
+                            <router-link to="/" class="button text-white mt-4 mt-lg-0 mr-4 mr-lg-0">Sign up</router-link>
                         </div>
                     </form>
                 </div>

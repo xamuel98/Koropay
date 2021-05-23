@@ -1,7 +1,7 @@
 <template>
     <section class="auth py-4 py-lg-6">
         <div class="container">
-            <a class="navbar-brand kp-logo" href="/">Koropay</a>
+            <router-link class="navbar-brand kp-logo" to="/">Koropay</router-link>
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-6">
                     <h1 class="ff__sb mb-4">
@@ -25,10 +25,10 @@
                                 @blur="onBlur('password')" placeholder="Password">
                             <i :class="appendEyeIconType" class="password-visibility" @click="switchVisibility" style="cursor: pointer;"></i>
                         </div>
-                        <a href="#" class="auth--link">Forgot Password?</a>
+                        <router-link to="/" class="auth--link">Forgot Password?</router-link>
                         <div class="d-lg-flex justify-content-lg-between align-items-center mt-4">
-                            <span class="create-account--link mr-4 mr-lg-0">Don't own an account?&nbsp;<a href="/register" class="auth--link">Create one</a></span>
-                            <a href="#" class="button text-white mt-4 mt-lg-0 mr-4 mr-lg-0">Sign in</a>
+                            <span class="create-account--link mr-4 mr-lg-0">Don't own an account?&nbsp;<router-link to="/register" class="auth--link">Create one</router-link></span>
+                            <router-link to="/" class="button text-white mt-4 mt-lg-0 mr-4 mr-lg-0">Sign in</router-link>
                         </div>
                     </form>
                 </div>
