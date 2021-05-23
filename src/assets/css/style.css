@@ -711,7 +711,9 @@ img.koropay-stroke {
 
 
 
-/*  */
+/* --------------------------------------
+    STEP TO USING KOROPAY
+----------------------------------------------- */
 .step .step-wrapper {
     width: 100%;
     padding: 28px 32px 32px;
@@ -788,6 +790,34 @@ img.koropay-stroke {
 }
 
 
+/* -----------------------------------
+    FAQS
+------------------------------------------- */
+.our-faqs {
+    display: block;
+    width: 100%;
+}
+  
+.our-faqs:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.our-faqs .sidebar{
+    align-self: start;
+    position: sticky;
+    top: 8rem;
+}
+  
+.our-faqs h3  {
+    font-size: 45px;
+    font-weight: 700;
+}
+  
+/* .our-faqs h3 span {
+    color: #2dea8f;
+} */
 
 
 
@@ -863,6 +893,22 @@ img.koropay-stroke {
     .video-play-icon {
         width: 2rem;
         height: 2rem;
+    }
+
+    .faqs-bg .hero-content p {
+        font-size: 18px;
+    }
+
+    .our-faqs h3 {
+        font-size: 30px;
+        padding: 25px;
+    }
+
+    .our-faqs .sidebar {
+        position: relative;
+        /* z-index: 3; */
+        top: 0;
+        /* background: #fff; */
     }
 }
 

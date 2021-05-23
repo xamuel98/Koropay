@@ -19,7 +19,8 @@
     "vue-feather-icons": "^5.1.0",
     "vue-router": "^3.0.1",
     "vue-scrollmagic": "^1.2.0",
-    "vue-slick-carousel": "^1.0.6"
+    "vue-slick-carousel": "^1.0.6",
+    "vue2-transitions": "^0.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
