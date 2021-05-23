@@ -206,7 +206,7 @@
                             </div>
                         </div>
                         <div class="more--testimonial-wrapper">
-                            <a href="#" class="more--testimonial-link">
+                            <router-link :to="{name: 'Customers'}" class="more--testimonial-link">
                                 <span class="more--testimonial-link-text">
                                     See all testimonials
                                 </span>
@@ -217,13 +217,13 @@
                                         <line x1="16" y1="12" x2="22" y2="18"></line>
                                     </g>
                                 </svg>
-                            </a>
+                            </router-link>
                         </div>
                     </div>
                     <div class="col-md-6 text-lg-right text-center vh-lg-0 px-0 px-lg-3 mt-4 mt-lg-0">
                         <div class="customer-images d-flex justify-content-between">
                             <div class="img-stripe stripe1 text-lg-center">
-                                <img src="@/assets/images/customers/customer-img-1.png" alt="" class="ml-n5">
+                                <img src="@/assets/images/customers/customer-img-1.png" alt="" class="ml-n5 ml-lg-0">
                                 <img src="@/assets/images/customers/customer-img-2.png" alt="">
                                 <img src="@/assets/images/customers/customer-img-3.png" alt="">
                                 <img src="@/assets/images/customers/customer-img-4.png" alt="">
@@ -354,9 +354,9 @@
                         </h1>
                     </div>
                     <div class="text-center text-lg-right">
-                        <a href="#" class="button text-white">
+                        <router-link to="/register" class="button text-white">
                             Get a free account 
-                        </a>
+                        </router-link>
                     </div>
                 </div>
             </div>

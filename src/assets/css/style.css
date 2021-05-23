@@ -496,14 +496,19 @@ button:focus {
 
 
 
-/* DOWNLOAD APP */
+/*--------------------------- 
+     DOWNLOAD APP
+-------------------------------------- */
 .download-app .bg__primary {
     overflow: hidden;
     border-radius: 30px;
 }
 
 
-/* FOOTER */
+
+/*--------------------------- 
+     FOOTER
+-------------------------------------- */
 .footer {
     background-image: linear-gradient(180deg, rgba(246, 253, 251, 0.06) 33.85%, #F6FDFB 100%);
 }
@@ -553,6 +558,119 @@ img.koropay-stroke {
     fill: #6a6d70;
 }
 
+/*--------------------------- 
+     TESTIMONIALS
+-------------------------------------- */
+.sidebar{
+    align-self: start;
+    position: sticky;
+    top: 8rem;
+}
+
+.sidebar h1 {
+    font-size: 60px;
+}
+
+.clients__single-quote {
+    position: relative;
+    overflow: hidden;
+    min-height: 0;
+    transition: min-height .5s ease;
+}
+
+.clients__single-quote-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 0 40px;
+    border: 0;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.clients__single-quote:nth-of-type(-n+3) .clients__single-quote-content {
+    position: relative;
+}
+
+.clients__single-quote-content svg {
+    margin: 0 0 28px;
+    width: 34px;
+    height: 28px;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.clients-quotes-module__text {
+    margin: 0 0 30px;
+    color: #1B0B27;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+    width: 85%;
+}
+
+.clients-quotes-module__quote-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+.clients-quotes-module__avatar {
+    flex-basis: auto;
+    width: 48px;
+    height: 48px;
+    margin-right: 18px;
+    border-radius: 50%;
+    background: center center no-repeat;
+    background-size: cover;
+}
+
+.clients-quotes-module__author {
+    flex-grow: 2;
+    color: #1B0B27;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.6;
+}
+
+.clients-quotes-module__position {
+    color: #4b4b4b;
+    font-size: 12px;
+    font-weight: normal;
+    width: 80%;
+}
+
+
+
+/*  */
+.hiw h1 {
+    font-size: 60px;
+}
+
+.video-gif {
+    width: 100%;
+    /* height: 100vh; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.video-gif video {
+    /* width: 80%;
+    height: 60vh; */
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+}
+
 
 @media only screen and (max-width: 768px) {
     .shape-container svg {
@@ -562,7 +680,8 @@ img.koropay-stroke {
 
     .hero__content .hero__header,
     .feature h1, .testimonials-app h1.section-heading,
-    .download-app-content h1, .try-signup h1, .auth h1 {
+    .download-app-content h1, .try-signup h1, .auth h1,
+    .sidebar h1, .hiw h1 {
         font-size: 31px;
         line-height: 37px;
     }
@@ -602,6 +721,18 @@ img.koropay-stroke {
         width: 25%;
         margin: 15px 5px;
     }
+
+    .sidebar {
+        position: relative;
+        top: 0;
+    }
+
+    .video-gif video {
+        /* width: 80%;
+        height: 60vh; */
+        width: 100% !important;
+        height: 60%;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -626,11 +757,30 @@ img.koropay-stroke {
         font-size: 22px;
     }
 
-    /* .hero__content-wrapper {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -65%);
-    } */
+}
+
+@media screen and (min-width: 768px) {
+    .clients__single-quote-content {
+        position: relative;
+        margin: 0 0 60px;
+    }
+
+    .clients-quotes-module__text {
+        margin: 0 0 60px;
+        font-size: 21px;
+        line-height: 1.62;
+        width: 85%;
+    }
+
+    .clients-quotes-module__avatar {
+        width: 68px;
+        height: 68px;
+        margin-right: 28px;
+    }
+
+    .clients-quotes-module__position {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {

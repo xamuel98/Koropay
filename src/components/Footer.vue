@@ -43,7 +43,7 @@
                         <h5 class="ff__sb mb-3">Customers</h5>
                         <ul class="u-list mb-2">
                             <li>
-                                <a href="#">Testimonials</a>
+                                <router-link :to="{name: 'Customers'}">Testimonials</router-link>
                             </li>
                         </ul>
                     </div>
@@ -161,7 +161,7 @@
                 </div>
                 <div class="col-6 col-md-3 col-lg-3">
                     <div class="footer-menu">
-                        <h5 class="ff__sb mb-3">Nigeria</h5>
+                        <h5 class="ff__sb mb-3">Nigeria 🇳🇬</h5>
                         <ul class="u-list mb-2">
                             <li>
                                 <address>
@@ -172,7 +172,7 @@
                     </div>
 
                     <div class="footer-menu mt-4">
-                        <h5 class="ff__sb mb-3">South Africa</h5>
+                        <h5 class="ff__sb mb-3">South Africa 🇿🇦</h5>
                         <ul class="u-list mb-2">
                             <li>
                                 <address>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="col-6 col-md-3 col-lg-3 mt-n10 mt-lg-0">
                     <div class="footer-menu">
-                        <h5 class="ff__sb mb-3">Ghana</h5>
+                        <h5 class="ff__sb mb-3">Ghana 🇬🇭</h5>
                         <ul class="u-list mb-2">
                             <li>
                                 <address>
@@ -195,7 +195,7 @@
                     </div>
 
                     <div class="footer-menu mt-4">
-                        <h5 class="ff__sb mb-3">Rwanda</h5>
+                        <h5 class="ff__sb mb-3">Rwanda 🇷🇼</h5>
                         <ul class="u-list mb-2">
                             <li>
                                 <address>

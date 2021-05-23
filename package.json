@@ -17,6 +17,7 @@
     "vue": "^2.5.2",
     "vue-feather-icons": "^5.1.0",
     "vue-router": "^3.0.1",
+    "vue-scrollmagic": "^1.2.0",
     "vue-slick-carousel": "^1.0.6"
   },
   "devDependencies": {

@@ -341,7 +341,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="/">How it works</router-link>
+                            <router-link class="nav-link" :to="{name: 'HowItWorks'}">How it works</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link class="nav-link" to="/">Company</router-link>
@@ -709,9 +709,9 @@
                                     </div>
                                 </li>
                                 <li class="nav-item" style="animation-delay: .5s;">
-                                    <router-link to="/" class="mobile-menu-links-item ml-0 ml-md-0">
+                                    <router-link :to="{name: 'HowItWorks'}" class="mobile-menu-links-item ml-0 ml-md-0">
                                         <span class="mobile-menu-links-item-title">
-                                            <span data-text="About Us">About Us</span>
+                                            <span data-text="How it works">How it works</span>
                                         </span>
                                     </router-link>
                                 </li>

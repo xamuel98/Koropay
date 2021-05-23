@@ -3,6 +3,8 @@ import Router from 'vue-router'
 
 // views
 import Home from '@/views/Home'
+import Customers from '@/views/Customers'
+import HowItWorks from '@/views/HowItWorks'
 
 // auths
 import Login from '@/auth/Login'
@@ -31,6 +33,19 @@ export default new Router({
       path: '/register',
       name: 'Register',
       component: Register
+    },
+    {
+      path: '/testimonials',
+      name: 'Customers',
+      component: Customers
+    },
+    {
+      path: '/how-it-works',
+      name: 'HowItWorks',
+      component: HowItWorks
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    return {x: 0, y:0}
+  }
 })

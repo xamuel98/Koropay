@@ -8,6 +8,7 @@ import './assets/css/style.css'
 import './assets/css/spacing.css'
 import './assets/css/dropdown.css'
 import './assets/css/feather.css'
+import VueScrollmagic from 'vue-scrollmagic'
 
 
 import Navbar from '@/components/Navbar'
@@ -17,6 +18,13 @@ Vue.component('app-navbar', Navbar)
 Vue.component('app-footer', Footer)
 
 Vue.config.productionTip = false
+
+Vue.use(VueScrollmagic, {
+  vertical: true,
+  globalSceneOptions: {},
+  loglevel: 2,
+  refreshInterval: 100
+})
 
 /* eslint-disable no-new */
 new Vue({
