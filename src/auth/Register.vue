@@ -92,6 +92,9 @@ export default {
             this.passwordFieldType2 = this.passwordFieldType2 === 'password' ? 'text' : 'password'
             this.appendEyeIconType2 = this.appendEyeIconType2 === 'feather-eye' ? 'feather-eye-off' : 'feather-eye'
         },
+    },
+    mounted() {
+        document.body.style.overflow = 'auto'
     }
 }
 </script>

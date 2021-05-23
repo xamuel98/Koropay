@@ -63,6 +63,9 @@ export default {
             this.passwordFieldType = this.passwordFieldType === 'password' ? 'text' : 'password'
             this.appendEyeIconType = this.appendEyeIconType === 'feather-eye' ? 'feather-eye-off' : 'feather-eye'
         },
+    },
+    mounted() {
+        document.body.style.overflow = 'auto'
     }
 }
 </script>
