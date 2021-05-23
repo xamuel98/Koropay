@@ -13,7 +13,7 @@
                         class=""
                         muted loop 
                         playsinline
-                        poster='image-poster' 
+                        poster='https://images.prismic.io/overpass/8366b993-57f5-465d-9ea9-6fd2ffdc7997_about-cover.jpg?auto=compress,format&rect=9,0,2405,1429&w=2424&h=1440' 
                         crossorigin="anonymous"
                         autoplay
                     >
