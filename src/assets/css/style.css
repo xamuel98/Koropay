@@ -578,23 +578,6 @@ img.koropay-stroke {
     transition: min-height .5s ease;
 }
 
-.clients__single-quote-content, .faqs__single-question-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0 0 40px;
-    border: 0;
-    padding: 40px 30px;
-    background-color: #fff;
-    border-radius: 30px;
-}
-
-.clients__single-quote:nth-of-type(-n+3) .clients__single-quote-content, 
-.faqs__single-question:nth-of-type(-n+3) .faqs__single-question-content {
-    position: relative;
-}
-
 .clients__single-quote-content svg {
     margin: 0 0 28px;
     width: 34px;
@@ -902,6 +885,7 @@ img.koropay-stroke {
     .our-faqs h3 {
         font-size: 30px;
         padding: 25px;
+        padding-left: 0;
     }
 
     .our-faqs .sidebar {
@@ -910,6 +894,16 @@ img.koropay-stroke {
         top: 0;
         /* background: #fff; */
     }
+
+    .clients__single-quote-content, .faqs__single-question-content {
+        width: 100%;
+        margin: 0 0 40px;
+        border: 0;
+        padding: 40px 30px;
+        background-color: #fff;
+        border-radius: 30px;
+    }
+    
 }
 
 @media only screen and (min-width: 992px) {
@@ -936,6 +930,23 @@ img.koropay-stroke {
 
     .step-text {
         width: 80%;
+    }
+
+    .clients__single-quote-content, .faqs__single-question-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0 0 40px;
+        border: 0;
+        padding: 40px 30px;
+        background-color: #fff;
+        border-radius: 30px;
+    }
+    
+    .clients__single-quote:nth-of-type(-n+3) .clients__single-quote-content, 
+    .faqs__single-question:nth-of-type(-n+3) .faqs__single-question-content {
+        position: relative;
     }
 
 }

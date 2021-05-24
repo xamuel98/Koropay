@@ -1,7 +1,7 @@
 <template>
     <div>
         <app-navbar></app-navbar>
-        <section class="customers pt-7 pb-5 bg-section-secondary">
+        <section class="customers pt-8 pt-lg-7 pb-5 bg-section-secondary">
             <div class="container">
                 <div class="row justify-content-center-align-items-center">
                     <div class="col-md-7 sidebar mb-5 mb-lg-0">

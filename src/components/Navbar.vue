@@ -344,7 +344,7 @@
                             <router-link class="nav-link" :to="{name: 'HowItWorks'}">How it works</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="/">Company</router-link>
+                            <router-link class="nav-link" :to="{name: 'Company'}">Company</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link class="nav-link" to="/">Blog</router-link>

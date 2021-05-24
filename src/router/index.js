@@ -6,6 +6,7 @@ import Home from '@/views/Home'
 import Customers from '@/views/Customers'
 import HowItWorks from '@/views/HowItWorks'
 import FAQs from '@/views/FAQs'
+import Company from '@/views/Company'
 
 // auths
 import Login from '@/auth/Login'
@@ -49,6 +50,11 @@ export default new Router({
       path: '/faqs',
       name: 'FAQs',
       component: FAQs
+    },
+    {
+      path: '/company',
+      name: 'Company',
+      component: Company
     }
   ],
   scrollBehavior(to, from, savedPosition) {
