@@ -2,7 +2,7 @@
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3" id="site-header">
             <div class="container">
-                <router-link class="navbar-brand" to="/">Koropay</router-link>
+                <router-link class="navbar-brand" to="/" translate="no">Koropay</router-link>
                 <button class="navbar-toggler open-panel" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

@@ -44,8 +44,8 @@
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 col-lg-6 mb-4">
-                        <div class="step-wrapper step-1">
-                            <h4 class="step-number">1</h4>
+                        <div class="step-wrapper step-1" data-counter="01">
+                            <!-- <h4 class="step-number">1</h4> -->
                             <h3 class="ff__sb step-title">Sign up</h3>
                             <p class="step-text">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum hic iure quisquam ducimus pariatur. Maiores, quos accusamus. Eaque, consectetur quas.
@@ -53,8 +53,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 mb-4">
-                        <div class="step-wrapper step-2">
-                            <h4 class="step-number">2</h4>
+                        <div class="step-wrapper step-2" data-counter="02">
                             <h3 class="ff__sb step-title">Request and receive</h3>
                             <p class="step-text">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum hic iure quisquam ducimus pariatur. Maiores, quos accusamus. Eaque, consectetur quas.
@@ -62,8 +61,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                        <div class="step-wrapper step-3">
-                            <h4 class="step-number">3</h4>
+                        <div class="step-wrapper step-3" data-counter="03">
                             <h3 class="ff__sb step-title">Repay and repeat</h3>
                             <p class="step-text">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum hic iure quisquam ducimus pariatur. Maiores, quos accusamus. Eaque, consectetur quas.
@@ -71,8 +69,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 mb-lg-0">
-                        <div class="step-wrapper step-4">
-                            <h4 class="step-number">4</h4>
+                        <div class="step-wrapper step-4" data-counter="04">
                             <h3 class="ff__sb step-title">Repay and repeat</h3>
                             <p class="step-text">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum hic iure quisquam ducimus pariatur. Maiores, quos accusamus. Eaque, consectetur quas.

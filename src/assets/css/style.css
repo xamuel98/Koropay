@@ -559,7 +559,7 @@ img.koropay-stroke {
 }
 
 /*--------------------------- 
-     TESTIMONIALS
+    TESTIMONIALS
 -------------------------------------- */
 .sidebar{
     align-self: start;
@@ -630,7 +630,9 @@ img.koropay-stroke {
 
 
 
-/*  */
+/* ----------------------------------------------------
+    HOW IT WORKS
+---------------------------------------------------- */
 .hiw h1 {
     font-size: 60px;
 }
@@ -729,32 +731,22 @@ img.koropay-stroke {
     font-weight: 800;
 }
 
-.step-number {
-    /* position: absolute;
-    left: auto;
-    top: 32px;
-    right: 32px;
-    bottom: auto; */
-    z-index: 1;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 32px;
-    height: 32px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #f6f6f7;
-    color: #878493;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 700;
+.step-wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+.step-wrapper::before {
+    content: attr(data-counter);
+    display: inline-block;
+    position: absolute;
+    top: -.45em;
+    right: 100%;
+    z-index: -1;
+    margin-right: -.3em;
+    font-size: 4.8em;
+    font-weight: bold;
+    color: #1b0b270d;
 }
 
 
@@ -803,6 +795,85 @@ img.koropay-stroke {
 } */
 
 
+/* --------------------------------------------
+    COMPANY
+-------------------------------------------- */
+.company h1.company--header {
+    font-size: 60px;
+}
+
+ul.company--hero-insight {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+ul.company--hero-insight li {
+    display: inline-grid;
+    width: 49%;
+}
+
+ul.company--hero-insight li span:first-child {
+    font-family: 'Sen-Bold';
+    font-size: 50px;
+}
+
+ul.company--hero-insight li span:last-child {
+    font-family: 'Sen-Bold';
+    font-size: 20px;
+}
+
+.our-people > div {
+    overflow: hidden;
+}
+
+.our-people > div > div:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.our-people > div > div:nth-child(2) h2 {
+    font-family: 'Sen-Bold';
+    font-size: 9em;
+    /* color: #fff; */
+}
+
+.team-member .team-member--avatar {
+    background-position: center;
+    background-size: 100%;
+    display: block;
+    background-color: #F4F7F9;
+    height: 140px;
+    width: 140px;
+    max-width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s ease-in-out all;
+    margin-bottom: 20px;
+}
+
+.team-member .team-member--avatar > img {
+    max-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.team-member h5 {
+    font-family: 'Sen-Bold';
+    font-size: 17px;
+}
+
+.team-member h5 > span {
+    font-size: 13px;
+}
+
+.team-member p {
+    font-size: 12px;
+}
 
 @media only screen and (max-width: 768px) {
     .shape-container svg {
@@ -814,7 +885,7 @@ img.koropay-stroke {
     .feature h1, .testimonials-app h1.section-heading,
     .download-app-content h1, .try-signup h1, .auth h1,
     .sidebar h1, .hiw h1, .steps.app-steps h1:first-child, 
-    .benefits-sec h1 {
+    .benefits-sec h1, .company h1.company--header, .our-team h1 {
         font-size: 31px;
         line-height: 37px;
     }
@@ -904,6 +975,18 @@ img.koropay-stroke {
         border-radius: 30px;
     }
     
+    .step-wrapper::before {
+        left: 0;
+        right: auto;
+    }
+
+    .our-people > div > div:nth-child(2) h2 {
+        font-size: 3em;
+    }
+
+    .team-member .team-member--avatar {
+        height: 140px;
+    }
 }
 
 @media only screen and (min-width: 992px) {

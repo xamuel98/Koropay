@@ -11,6 +11,7 @@ import './assets/css/feather.css'
 import VueScrollmagic from 'vue-scrollmagic'
 
 
+
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
