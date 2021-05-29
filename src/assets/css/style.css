@@ -571,7 +571,7 @@ img.koropay-stroke {
     font-size: 60px;
 }
 
-.clients__single-quote, .faqs__single-question {
+.clients__single-quote, .faqs__single-question, .values__single-value {
     position: relative;
     overflow: hidden;
     min-height: 0;
@@ -875,6 +875,91 @@ ul.company--hero-insight li span:last-child {
     font-size: 12px;
 }
 
+
+
+
+/* -------------------------------------
+    VALUES
+----------------------------------------- */
+.value-0--icon img {
+    background: url('../../assets/images/svg/icons/values-sprites.svg') -320px 0;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
+.value-1--icon img {
+    background: url('../../assets/images/svg/icons/values-sprites.svg') -80px 0;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
+.value-2--icon img {
+    background: url('../../assets/images/svg/icons/values-sprites.svg') -400px 0;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
+.value-3--icon img {
+    background: url('../../assets/images/svg/icons/values-sprites.svg') -480px 0;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
+.value-4--icon img {
+    background: url('../../assets/images/svg/icons/values-sprites.svg') -239px 0;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
+
+
+/* ------------------------------------
+    LIFESTYLE 
+-----------------------------------*/
+.our-lifestyle .slick-initialized .slick-slide {
+    margin-right: 24px;
+}
+
+.our-lifestyle .slick-slider {
+    position: relative;
+}
+
+.our-lifestyle .slick-slide[data-index="5"] {
+    display: none !important;
+}
+
+.our-lifestyle .custom-arrow.slick-arrow{
+    position: absolute;
+    bottom: -61px;
+}
+
+.our-lifestyle .custom-arrow.slick-arrow:hover {
+    cursor: pointer;
+}
+
+.our-lifestyle .custom-arrow.slick-arrow.slick-next {
+    left: 50%;
+}
+
+.our-lifestyle .custom-arrow.slick-arrow.slick-prev {
+    left: 46%;
+    z-index: 100;
+}
+
+.our-lifestyle .custom-arrow.slick-arrow.slick-next.slick-disabled > svg {
+    color: #c4c4c4;
+}
+
+.our-lifestyle .custom-arrow.slick-arrow.slick-prev.slick-disabled > svg {
+    color: #c4c4c4;
+}
+
+
 @media only screen and (max-width: 768px) {
     .shape-container svg {
         width: 386px;
@@ -885,7 +970,8 @@ ul.company--hero-insight li span:last-child {
     .feature h1, .testimonials-app h1.section-heading,
     .download-app-content h1, .try-signup h1, .auth h1,
     .sidebar h1, .hiw h1, .steps.app-steps h1:first-child, 
-    .benefits-sec h1, .company h1.company--header, .our-team h1 {
+    .benefits-sec h1, .company h1.company--header, .our-team h1,
+    .our-lifestyle h1, .come-join-us h1 {
         font-size: 31px;
         line-height: 37px;
     }
@@ -966,7 +1052,7 @@ ul.company--hero-insight li span:last-child {
         /* background: #fff; */
     }
 
-    .clients__single-quote-content, .faqs__single-question-content {
+    .clients__single-quote-content, .faqs__single-question-content, .values__single-value {
         width: 100%;
         margin: 0 0 40px;
         border: 0;
@@ -986,6 +1072,22 @@ ul.company--hero-insight li span:last-child {
 
     .team-member .team-member--avatar {
         height: 140px;
+    }
+
+    .container-sm {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .our-lifestyle .custom-arrow.slick-arrow.slick-prev {
+        left: 35%;
+    }    
+
+    .our-lifestyle .custom-arrow.slick-arrow.slick-next {
+        left: 55%;
     }
 }
 
@@ -1026,10 +1128,27 @@ ul.company--hero-insight li span:last-child {
         background-color: #fff;
         border-radius: 30px;
     }
+
+    .values__single-value {
+        width: 100%;
+        margin: 0 0 40px;
+        border: 0;
+        padding: 40px 30px;
+        background-color: #fff;
+        border-radius: 30px;
+    }
     
     .clients__single-quote:nth-of-type(-n+3) .clients__single-quote-content, 
     .faqs__single-question:nth-of-type(-n+3) .faqs__single-question-content {
         position: relative;
+    }
+
+    .our-lifestyle .slick-track.slick-center {
+        width: 3104px !important;
+    }
+
+    .come-join-us p {
+        width: 70%;
     }
 
 }

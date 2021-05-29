@@ -716,7 +716,7 @@
                                     </router-link>
                                 </li>
                                 <li class="nav-item" style="animation-delay: .7s;">
-                                    <router-link to="/" class="mobile-menu-links-item ml-0 ml-md-0">
+                                    <router-link :to="{name: 'Company'}" class="mobile-menu-links-item ml-0 ml-md-0">
                                         <span class="mobile-menu-links-item-title">
                                             <span data-text="Company">Company</span>
                                         </span>
